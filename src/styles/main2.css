@@ -1,0 +1,63 @@
+@media screen and (max-width: 850px) {
+  .songs_wrap {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    color: darkgray;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .songs_no {
+    display: none;
+  }
+  .songs_title {
+    width: 40%;
+  }
+
+  .songs_artist {
+    width: 40%;
+  }
+
+  .songs_time {
+    width: 20%;
+  }
+
+  .songs_album {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .songs_wrap {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    color: darkgray;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .songs_no {
+    width: 5%;
+  }
+  .songs_title {
+    width: 38%;
+  }
+
+  .songs_artist {
+    width: 22%;
+  }
+
+  .songs_time {
+    width: 8%;
+  }
+
+  .songs_album {
+    width: 30%;
+  }
+}

@@ -6,6 +6,7 @@ import "./styles/nav2.css";
 import "./styles/main1.css";
 import "./styles/main2.css";
 import "./styles/main.css";
+import "./styles/player.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Nav2 from "./component/nav2";
 import Main from "./component/main";

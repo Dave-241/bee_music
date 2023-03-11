@@ -174,7 +174,6 @@
 
   .song_title {
     width: 100%;
-    border: 1px solid black;
     height: auto;
     display: flex;
     text-transform: uppercase;
@@ -376,7 +375,6 @@
 
   .song_title {
     width: 100%;
-    border: 1px solid black;
     height: auto;
     display: flex;
     text-transform: uppercase;
@@ -390,7 +388,7 @@
   }
 
   .artist {
-    width: 15%;
+    width: 22%;
   }
 
   .time {
@@ -398,6 +396,6 @@
   }
 
   .album {
-    width: 37%;
+    width: 30%;
   }
 }

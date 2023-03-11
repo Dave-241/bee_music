@@ -9,6 +9,7 @@
 
   .song_all_wrap {
     padding: 0 2%;
+    padding-bottom: 110px;
   }
 }
 @media screen and (min-width: 850px) {
@@ -22,5 +23,6 @@
 
   .song_all_wrap {
     padding: 0 5%;
+    padding-bottom: 120px;
   }
 }
