@@ -1,9 +1,12 @@
+import Login from "./component/login";
+import './styles/login.css'
 
 function App() {
   return (
-  <>
-  heool
-  </>
+  <body>
+ 
+ <Login/>
+  </body>
   );
 }
 
