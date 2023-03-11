@@ -1,7 +1,26 @@
-.main_all_wrapper {
-  background-color: rgba(231, 245, 240, 0.583);
-  width: 58%;
-  min-height: 100%;
-  margin-left: 20%;
-  margin-right: 22%;
+@media screen and (max-width: 850px) {
+  .main_all_wrapper {
+    background-color: rgba(231, 245, 240, 0.583);
+    width: 100%;
+    min-height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .song_all_wrap {
+    padding: 0 2%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .main_all_wrapper {
+    background-color: rgba(231, 245, 240, 0.583);
+    width: 58%;
+    min-height: 100%;
+    margin-left: 20%;
+    margin-right: 22%;
+  }
+
+  .song_all_wrap {
+    padding: 0 5%;
+  }
 }

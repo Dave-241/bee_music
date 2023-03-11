@@ -53,7 +53,19 @@ const Main1 = () => {
             <p className="views">32.02</p>
           </div>
         </div>
-        <div className="main1_wrap4"></div>
+        <div className="main1_wrap4">
+          <h3 className="playlist">My playlist</h3>
+
+          <p className="show">Show All </p>
+        </div>
+
+        <div className="song_title">
+          <p className="no">#</p>
+          <p className="title">title</p>
+          <p className="artist">artist</p>
+          <p className="time">time</p>
+          <p className="album">album</p>
+        </div>
       </div>
     </>
   );
