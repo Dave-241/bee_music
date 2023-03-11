@@ -30,7 +30,7 @@ const Nav = () => {
         </div>
 
         <div className="nav_menu_wrap">
-          <div className="nav_menu_list_wrap">
+          <div className="nav_menu_list_wrap active_link">
             <i className=" bi bi-house-door-fill"></i>
             <p className="nav_menu_text">Home</p>
           </div>

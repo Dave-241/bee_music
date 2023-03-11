@@ -154,6 +154,12 @@
     font-size: 30px;
     color: orange;
   }
+
+  /* this is for the active link sha  */
+  .active_link {
+    background-color: black;
+    color: white;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -288,7 +294,6 @@
   .nav_user_wrap {
     display: flex;
     align-items: center;
-    border: 1px solid;
     justify-content: space-between;
     width: 100%;
   }
@@ -311,5 +316,11 @@
   .nav_use_icon {
     font-size: 30px;
     color: orange;
+  }
+
+  /* this is for the active link  */
+  .active_link {
+    background-color: black;
+    color: white;
   }
 }

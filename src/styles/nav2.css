@@ -1,0 +1,137 @@
+@media screen and (max-width: 850px) {
+  .nav2_main_wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .nav2_main_wrapper {
+    width: 22%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.2%;
+    background-color: rgba(231, 245, 240, 0.583);
+  }
+
+  .nav2_main_wrapper1 {
+    width: 100%;
+    height: 15%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    padding-top: 10px;
+  }
+
+  .shortcut {
+    padding-top: 10px;
+  }
+
+  .nav2_genre_wrap {
+    width: fit-content;
+    padding: 4% 5%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 8px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: ease 0.6s;
+  }
+  .nav2_genre_wrap:hover {
+    background-color: orange;
+    cursor: pointer;
+  }
+  .nav2_main_wrapper2 {
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .artist_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .artist_wrap:hover {
+    background-color: orange;
+    border-radius: 20px;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .art_wrap1 {
+    display: flex;
+    gap: 10px;
+  }
+
+  .art_img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .art_text_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .art_text1 {
+    font-weight: bold;
+  }
+  .art_text_2 {
+    color: gray;
+    font-weight: lighter;
+  }
+
+  .art_ctn {
+    font-size: 20px;
+  }
+  .nav2_main_wrapper3 {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: 5s;
+  }
+  .nav2_main_wrapper3:hover {
+    background-color: orange;
+    cursor: pointer;
+  }
+  .shortcut_img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+  }
+
+  .shortcut_text_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shortcut_text1 {
+    font-weight: bold;
+  }
+  .shortcut_text2 {
+    font-weight: lighter;
+    color: gray;
+  }
+
+  .shortcut_icon {
+    font-size: 20px;
+  }
+}
