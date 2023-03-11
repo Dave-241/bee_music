@@ -132,16 +132,24 @@
   background-color: black;
   color: white;
   padding: 3% 8%;
+  cursor: pointer;
   border-radius: 20px;
   border: none;
+  transition: ease 0.5s;
 }
 
+.ctn1:hover {
+  background-color: white;
+  color: orange;
+  border: 1px solid;
+}
 .ctn2 {
   background-color: white;
   color: black;
   padding: 3% 8%;
   border-radius: 20px;
   border: 1px solid;
+  transition: ease 0.5s;
 }
 
 .hero_date_wrap {

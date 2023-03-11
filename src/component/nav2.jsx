@@ -41,7 +41,7 @@ const Nav2 = () => {
             </div>
             <i className=" bi bi-three-dots art_ctn"></i>
           </div>
-
+          {/* 
           <div className="artist_wrap">
             <div className="art_wrap1">
               <img src={drake} alt="" className="art_img" />
@@ -51,7 +51,7 @@ const Nav2 = () => {
               </div>
             </div>
             <i className=" bi bi-three-dots art_ctn"></i>
-          </div>
+          </div> */}
 
           <div className="artist_wrap">
             <div className="art_wrap1">
