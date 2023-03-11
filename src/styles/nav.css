@@ -1,15 +1,58 @@
 @media screen and (max-width: 850px) {
+  .mob_tab_menu_wrap {
+    position: fixed;
+    z-index: 99;
+    width: auto;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .mob_nav_important {
+    display: flex;
+  }
+
+  .desktop_nav_important {
+    display: none;
+  }
+  .mob_deco1 {
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: orange;
+  }
+  .mob_deco2 {
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: green;
+  }
+  .mob_deco3 {
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: red;
+  }
+
+  .mob_deco4 {
+    color: gray;
+  }
+
   nav {
     width: 100%;
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     padding: 0 5%;
-    z-index: 20;
+    z-index: 9999;
+    transition: ease-in 0.3s;
+    background-color: white;
   }
 
   .nav_deco_wrap {
@@ -164,6 +207,17 @@
 }
 
 @media screen and (min-width: 850px) {
+  /* hide the mobile navigation */
+  .mob_tab_menu_wrap {
+    display: none;
+  }
+
+  .mob_nav_important {
+    display: none;
+  }
+  .desktop_nav_important {
+    display: flex;
+  }
   nav {
     width: 20%;
     height: 100%;
@@ -173,6 +227,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    background-color: white;
+
     padding: 0 1%;
   }
 
