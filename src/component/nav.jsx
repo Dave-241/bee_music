@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { redirect } from "react-router";
 import navlogo from "../images/logo.jpg";
 import avater from "../images/avater.jpg";
+import apiClient from "../spotify";
 
 const Nav = () => {
   const [top, settop] = useState("-100%");
+  const [name, setname] = useState("");
 
   const showtab = () => {
     settop("0");
@@ -11,6 +14,24 @@ const Nav = () => {
   const hidetab = () => {
     settop("-100%");
   };
+
+  const logout = () => {
+    window.localStorage.removeItem("token");
+    return (window.location.href = "/");
+  };
+
+  useEffect(() => {
+    apiClient.get("me").then((response) => {
+      if (response.status == 200) {
+        setname(response.data.display_name);
+      } else {
+        window.localStorage.removeItem("token");
+        return (window.location.href = "/");
+      }
+      // setImage(response.data.images[0].url);
+      // console.log(response);
+    });
+  }, []);
   return (
     <>
       <nav className="desktop_nav_important">
@@ -77,11 +98,14 @@ const Nav = () => {
               <div className="nav_user_profile_wrap">
                 <img src={avater} alt="" className="nav_user_img" />
 
-                <p className="nav_user_name">Ceptari Tyas</p>
+                <p className="nav_user_name">{name}</p>
               </div>
 
               <div className="nav_user_icon_wrap">
-                <i className="bi  nav_use_icon bi-caret-right-fill"></i>
+                {/* <i className="bi  nav_use_icon bi-caret-right-fill"></i> */}
+                <p className="logout" onClick={logout}>
+                  Logout
+                </p>
               </div>
             </div>
           </div>
@@ -153,11 +177,12 @@ const Nav = () => {
               <div className="nav_user_profile_wrap">
                 <img src={avater} alt="" className="nav_user_img" />
 
-                <p className="nav_user_name">Ceptari Tyas</p>
+                <p className="nav_user_name">{name}</p>
               </div>
 
               <div className="nav_user_icon_wrap">
-                <i className="bi  nav_use_icon bi-caret-right-fill"></i>
+                {/* <i className="bi  nav_use_icon bi-caret-right-fill"></i> */}
+                <p className="logout">Logout</p>
               </div>
             </div>
           </div>

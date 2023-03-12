@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/logo.jpg";
 
-const Login = () => {
+const Login = ({ loginInfo }) => {
   return (
     <>
       <div className="login_main_wrap">
@@ -14,7 +14,14 @@ const Login = () => {
           </p>
         </div>
 
-        <a href="/" className="login_btn">
+        <a
+          href={`${loginInfo.authEndpoint}client_id=${
+            loginInfo.clientId
+          }&redirect_uri=${loginInfo.redirectUri}&scope=${loginInfo.scopes.join(
+            "%20"
+          )}&response_type=token&show_dialog=true`}
+          className="login_btn"
+        >
           Login
         </a>
 
