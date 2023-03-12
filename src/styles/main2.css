@@ -1,3 +1,14 @@
+.songs_wrap {
+  transition: ease-out 0.3s;
+}
+
+.songs_wrap:hover {
+  background-color: orange;
+  color: white;
+  padding: 0 5%;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 850px) {
   .songs_wrap {
     width: 100%;

@@ -16,7 +16,7 @@ import { setClientToken } from "./spotify";
 function App() {
   const authEndpoint = "https://accounts.spotify.com/authorize?";
   const clientId = "05cf9fc3e76041a4be0b85c2162d4117";
-  const redirectUri = "http://localhost:3000";
+  const redirectUri = "https://bee-music-three.vercel.app/";
   const scopes = ["user-library-read", "playlist-read-private"];
 
   const [token, setToken] = useState("");
@@ -30,11 +30,9 @@ function App() {
       window.localStorage.setItem("token", _token);
       setToken(_token);
       setClientToken(_token);
-      console.log(token);
     } else {
       setToken(token);
       setClientToken(token);
-      console.log(token);
     }
   }, []);
 

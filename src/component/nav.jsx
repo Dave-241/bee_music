@@ -21,17 +21,20 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    apiClient.get("me").then((response) => {
-      if (response.status == 200) {
+    apiClient
+      .get("me")
+      .then((response) => {
         setname(response.data.display_name);
-      } else {
+
+        // setImage(response.data.images[0].url);
+        // console.log(response);
+      })
+      .catch(function (error) {
         window.localStorage.removeItem("token");
         return (window.location.href = "/");
-      }
-      // setImage(response.data.images[0].url);
-      // console.log(response);
-    });
-  }, []);
+      });
+  });
+
   return (
     <>
       <nav className="desktop_nav_important">

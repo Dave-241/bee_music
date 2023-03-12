@@ -54,7 +54,7 @@ const Main1 = () => {
           </div>
         </div>
         <div className="main1_wrap4">
-          <h3 className="playlist">My playlist</h3>
+          <h3 className="playlist">Rema Mix</h3>
 
           <p className="show">Show All </p>
         </div>

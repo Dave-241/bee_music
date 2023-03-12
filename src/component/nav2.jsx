@@ -11,7 +11,10 @@ const Nav2 = () => {
         <h2 className="shortcut">Shortcuts</h2>
         <div className="nav2_main_wrapper1">
           <div className="nav2_genre_wrap">
-            <i className=" bi bi-file-music gen1"></i>
+            <i
+              className=" bi bi-music-player-fill gen1"
+              style={{ color: "red" }}
+            ></i>
             <p className="genre_text">chill hits</p>
           </div>
 
@@ -20,11 +23,17 @@ const Nav2 = () => {
             <p className="genre_text">Indie Pop</p>
           </div>
           <div className="nav2_genre_wrap">
-            <i className=" bi bi-file-music gen1"></i>
+            <i
+              className=" bi bi-database-fill gen1"
+              style={{ color: "green" }}
+            ></i>
             <p className="genre_text">Piano Blues</p>
           </div>
           <div className="nav2_genre_wrap">
-            <i className=" bi bi-file-music gen1"></i>
+            <i
+              className=" bi bi-incognito gen1"
+              style={{ color: "orange" }}
+            ></i>
             <p className="genre_text">Jazz</p>
           </div>
         </div>
