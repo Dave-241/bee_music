@@ -39,13 +39,21 @@ const Nav = () => {
     <>
       <nav className="desktop_nav_important">
         <div className="nav_deco_wrap">
-          <div className="nav_deco">
+          {/* <div className="nav_deco">
             <div className="nav_deco1"></div>
             <div className="nav_deco2"></div>
             <div className="nav_deco3"></div>
-          </div>
+          </div> */}
 
-          <div className="nav_ham">
+          <div
+            className="nav_ham"
+            style={{
+              display: "flex",
+              justifyContent: "end",
+              width: "10%",
+              alignItems: "center",
+            }}
+          >
             <i className="nav_ham_item bi bi-list"></i>
 
             <i className="nav_mob_ham bi bi-x-lg"></i>
@@ -118,13 +126,21 @@ const Nav = () => {
       {/* mobile tab */}
       <nav className="mob_nav_important" style={{ top: top }}>
         <div className="nav_deco_wrap">
-          <div className="nav_deco">
+          {/* <div className="nav_deco">
             <div className="nav_deco1"></div>
             <div className="nav_deco2"></div>
             <div className="nav_deco3"></div>
-          </div>
+          </div> */}
 
-          <div className="nav_ham">
+          <div
+            className="nav_ham"
+            style={{
+              display: "flex",
+              justifyContent: "end",
+              width: "10%",
+              alignItems: "center",
+            }}
+          >
             <i className="nav_ham_item bi bi-list"></i>
 
             <i className="nav_mob_ham bi bi-x-lg" onClick={hidetab}></i>
