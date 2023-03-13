@@ -209,9 +209,9 @@ const Nav = () => {
       </nav>
 
       <div className="mob_tab_menu_wrap" onClick={showtab}>
-        <div className="mob_deco1"></div>
+        {/* <div className="mob_deco1"></div>
         <div className="mob_deco2"></div>
-        <div className="mob_deco3"></div>
+        <div className="mob_deco3"></div> */}
         <p className="mob_deco4">menu</p>
       </div>
     </>
